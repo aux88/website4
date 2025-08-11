@@ -47,10 +47,6 @@ li {
     font-weight: 700;
 }
 
-.about__container {
-    margin: 0 112px;
-}
-
 .u-title {
     text-align: center;
 }
@@ -74,6 +70,12 @@ li {
 
     .u-title--ja {
         font-size: 28px;
+    }
+}
+
+@media(max-width:767px) {
+    .no-sp {
+        display: none;
     }
 }
 
@@ -321,4 +323,110 @@ li {
     .about {
         padding-top: 31px;
     }
+}
+
+.about__container {
+    width: 100%;
+}
+
+@media(max-width: 767px) {
+    .about__background {
+        padding: 32px 0;
+        margin-top: 22px;
+        background-image: url("/assets/image/about_us_img.jpg");
+        background-size: 100%;
+    }
+}
+
+@media(min-width: 768px) {
+    .about__background {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width: 768px) {
+    .about__container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+.about__textbox {
+    width: 91.8%;
+    padding: 14px 24px 17px;
+    margin: 0 auto;
+    background-color: rgb(255 255 255 / 80%);
+    border-radius: 32px;
+}
+
+@media(min-width: 768px) {
+    .about__textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 50%;
+        padding: 0 0 0 16px;
+        background-color: #fff;
+        border-radius: 0;
+    }
+}
+
+.about__main-text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.75;
+}
+
+@media(min-width: 768px) {
+    .about__main-text {
+        max-width: 414px;
+        font-size: 20px;
+        line-height: 1.75;
+    }
+}
+
+.about__sub-text {
+    margin-top: 9px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+@media(min-width: 768px) {
+    .about__sub-text {
+        max-width: 414px;
+        margin-top: 25px;
+    }
+}
+
+.about__image-area {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .about__image-area {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        padding: 30px;
+    }
+}
+
+.about__image-frame {
+    width: 88.6%;
+    aspect-ratio: 390 /569;
+
+    /* トリミング枠の縦横比 */
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.about__image {
+    display: block;
+    width: min(390px,calc(390/1000*100vw));
+    object-fit: cover;
+    object-position: 0 -9px;
 }
