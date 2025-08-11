@@ -47,7 +47,126 @@ li {
     font-weight: 700;
 }
 
+/* ヘッダー
+------------------------------------- */
 
+.header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #fff;
+}
 
-/* 部品
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    margin: 0 16px;
+}
+
+@media(min-width:768px) {
+    .header__container {
+        height: 114px;
+    }
+}
+
+.header__logo-image {
+    width: 192px;
+    height: 23px;
+}
+
+@media(min-width:768px) {
+    .header__logo-image {
+        width: 263px;
+        height: 30px;
+    }
+}
+
+.header__menu-icon {
+    position: relative;
+    width: 24px;
+    height: 18px;
+}
+
+@media(min-width:768px) {
+    .header__menu-icon {
+        display: none;
+    }
+}
+
+.header__menu-icon--top,
+.header__menu-icon--middle,
+.header__menu-icon--bottom {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+}
+
+.header__menu-icon--middle {
+    top: 8px;
+}
+
+.header__menu-icon--bottom {
+    bottom: 0;
+}
+
+.header__menu {
+    position: fixed;
+    top: 63px;
+    width: calc(100vw - 32px);
+    padding: 40px 0;
+    background-color: #168352;
+    border-radius: 24px;
+}
+
+@media(min-width:768px) {
+    .header__menu {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+        background-color: #fff;
+    }
+}
+
+.header__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu-item {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header__menu-link {
+    color: #fff;
+}
+
+@media(min-width:768px) {
+    .header__menu-list {
+        flex-direction: row;
+    }
+
+    .header__menu-item {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .header__menu-item:first-child {
+        display: none;
+    }
+
+    .header__menu-link {
+        color: #000;
+    }
+}
+
+/*
 ------------------------------------- */

@@ -7,7 +7,6 @@
         <title> 持続可能な未来農業を実現 | Kirameki Farm</title>
         <meta name="description" content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
 
-        <!-- OGP関連のタグはここに書く -->
         <meta property="og:title" content="持続可能な未来農業を実現 | Kirameki Farm">
         <meta property="og:description" content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
         <meta property="og:type" content="article">
@@ -24,27 +23,33 @@
         <!-- リセットCSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
 
-        <!--ライブラリ 使わないやつは消す -->
-        <!-- Smart Tab -->
-        <link href="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/css/smart_tab_all.min.css" rel="stylesheet">
-        <!-- Slick -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
         <!-- Swiper -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-        <link href="/style/main.css" rel="stylesheet">
-
-        <!-- ファビコン -->
-
+        <link href="assets/style/main.css" rel="stylesheet">
     </head>
 
     <body>
-
         <header class="header">
-
+            <div contents-width>
+                <div class="header__container">
+                    <h1>
+                        <img class="header__logo-image" src="/assets/image/images_header_logo.svg" alt="Kirameki Farm">
+                    </h1>
+                    <div class="header__menu-icon">
+                        <span class="header__menu-icon--top"></span>
+                        <span class="header__menu-icon--middle"></span>
+                        <span class="header__menu-icon--bottom"></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item"><a class="header__menu-link">トップ</a></li>
+                            <li class="header__menu-item"><a class="header__menu-link">価格・スペック</a></li>
+                            <li class="header__menu-item"><a class="header__menu-link">よくあるご質問</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
         <main>
 
@@ -56,17 +61,10 @@
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <!--ライブラリ 使わないやつは消す -->
-        <!-- Smart Tab -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js"></script>
-        <!-- Slick -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <!-- Swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <!-- waypoints -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script src="/script/main.js"></script>
+        <script src="/assets/script/main.js"></script>
     </body>
 
 </html>
