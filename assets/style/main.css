@@ -83,21 +83,21 @@ li {
     }
 }
 
-.header__menu-icon {
+.hamburger__menu-icon {
     position: relative;
     width: 24px;
     height: 18px;
 }
 
 @media(min-width:768px) {
-    .header__menu-icon {
+    .hamburger__menu-icon {
         display: none;
     }
 }
 
-.header__menu-icon--top,
-.header__menu-icon--middle,
-.header__menu-icon--bottom {
+.hamburger__menu-icon--top,
+.hamburger__menu-icon--middle,
+.hamburger__menu-icon--bottom {
     position: absolute;
     display: block;
     width: 24px;
@@ -105,18 +105,17 @@ li {
     background-color: #000;
 }
 
-.header__menu-icon--middle {
+.hamburger__menu-icon--middle {
     top: 8px;
 }
 
-.header__menu-icon--bottom {
+.hamburger__menu-icon--bottom {
     bottom: 0;
 }
 
-.header__menu {
+.hamburger__menu {
     position: fixed;
     top: 63px;
-    visibility: hidden;
     width: calc(100vw - 32px);
     padding: 40px 0;
     background-color: #168352;
@@ -125,52 +124,56 @@ li {
     transition: all 0.6s;
 }
 
-.header__menu-active {
+@media(min-width: 768px) {
+    .hamburger__menu{
+        display: none;
+    }
+
+}
+
+.hamburger__menu-active {
     visibility: visible;
     opacity: 1;
 }
 
-@media(min-width:768px) {
-    .header__menu {
-        position: static;
-        visibility: visible;
-        flex-direction: row;
-        justify-content: center;
-        width: auto;
-        background-color: #fff;
-        opacity: 1;
-    }
-}
-
-.header__menu-list {
+.hamburger__menu-list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    row-gap: 40px;
     align-items: center;
     justify-content: space-between;
 }
 
-.header__menu-item {
+.hamburger__menu-item {
     font-size: 18px;
     font-weight: 700;
 }
 
-.header__menu-link {
+.hamburger__menu-link {
     color: #fff;
 }
 
+
+.header__menu {
+    display: none;
+}
+
 @media(min-width:768px) {
+    .header__menu {
+        display: block;
+        background-color: #fff;
+    }
+
     .header__menu-list {
-        flex-direction: row;
+        display: flex;
+        column-gap: 40px;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .header__menu-item {
         font-size: 16px;
         font-weight: 700;
-    }
-
-    .header__menu-item:first-child {
-        display: none;
     }
 
     .header__menu-link {
