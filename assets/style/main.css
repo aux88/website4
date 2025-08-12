@@ -851,6 +851,25 @@ li {
     color: #222
 }
 
-.button-pink-ghost {
-    margin: auto;
+.news__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(300/390*100vw);
+    max-width: 300px;
+    height:66px;
+    margin: 25px auto;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #168352;
+    border-radius: 33px;
+    box-shadow: 0 5px 0 #066655;
+    transition: .3s;
+}
+
+.news__button:hover {
+   background-color:#09947b;
+  box-shadow: 0 2px 0 #333;
+  transform: translateY(3px);
 }
