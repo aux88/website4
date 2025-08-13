@@ -1138,6 +1138,13 @@ li {
     margin-bottom: 58px;
 }
 
+@media(min-width: 768px) {
+    .gallaly {
+    margin-top: 8px;
+    margin-bottom: 62px;
+}
+}
+
 .gallaly__image {
     width: 100%;
     aspect-ratio: 358 /236.97;
@@ -1402,4 +1409,56 @@ li {
     .spec__table--cell {
         display: table-cell;
     }
+}
+
+/* お問い合わせ
+------------------------------------- */
+.contact {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background-image: url("/assets/image/contact_bg.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: max(762px, calc(762 / 390 * 100vw));
+}
+
+.contact::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #000;
+    opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+    .contact {
+        height: 450px;
+        background-size: 1446px;
+    }
+}
+
+.contact__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(358/390*100vw);
+    max-width: 358px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 40px;
+    transform: translate(-50%, -50%);
+}
+
+.contact__button:hover {
+    color: #168352;
+    background-color: #fff;
 }
