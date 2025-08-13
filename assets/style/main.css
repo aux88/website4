@@ -1163,6 +1163,30 @@ li {
     }
 }
 
+/* ページネーションの色 */
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 3px;
+  cursor: pointer;
+  background: #eee;
+  opacity: 1;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 20px;
+}
+
+/* アクティブなとき */
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #168352;
+}
+
 /* 特長(product-service)
 ------------------------------------- */
 .product-service {

@@ -17,3 +17,17 @@ $(window).on('resize', function () {
 $('.hamburger__menu--back-to-top').on('click', function(event) {
     menu.removeClass('hamburger__menu-active');
 });
+
+// カルーセル
+const swiper = new Swiper(".swiper", {
+  pagination: {
+    el: ".swiper-pagination", //必須の設定：ページネーションのclass指定
+    type: "bullets",
+    clickable: "clickable"
+  },
+  loop: true, //繰り返し指定
+  spaceBetween: 30, //スライド感の余白
+  autoplay: {
+    delay: 5000 //5秒ごとにスライダを切り替える
+  }
+});
