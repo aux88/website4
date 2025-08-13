@@ -31,3 +31,24 @@ const swiper = new Swiper(".swiper", {
     delay: 5000 //5秒ごとにスライダを切り替える
   }
 });
+
+// アコーディオンのタイトルがクリックされたら
+$('.faq__question').on('click', function (e) {
+
+  // .faq__answerを選択
+  var content = $(this).next();
+
+  // .faq__answerを表示・非表示
+  content.slideToggle();
+
+  // クリックされた要素の中、または近くのアイコンを探す
+  var icon = $(this).find('.toggle-icon');
+
+  // アイコンのクラスを切り替え
+  if (icon.hasClass('is-open')) {
+    icon.removeClass('is-open');
+  } else {
+    icon.addClass('is-open');
+  }
+
+});
