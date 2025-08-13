@@ -761,10 +761,20 @@ li {
 
 .news {
     margin-top: 52px;
+    margin-bottom: 61px;
+}
+
+@media (min-width: 768px) {
+    .news {
+        margin-top: 59px;
+        margin-bottom: 70px;
+    }
 }
 
 .news__container {
-    margin: 0 16px;
+    max-width: 932px;
+    padding: 0 16px;
+    margin: 0 auto;
 }
 
 .news__list {
@@ -773,15 +783,14 @@ li {
     align-items: center;
     justify-content: center;
     margin-top: 21px;
+    margin-bottom: 25px;
 }
 
 @media (min-width: 768px) {
     .news__list {
         flex-wrap: nowrap;
-        column-gap: 2.5rem;
-        margin-right: 0.65rem;
-        margin-bottom: 2.35rem;
-        margin-left: 0.65rem;
+        margin-top: 32px;
+        margin-bottom: 30px;
     }
 }
 
@@ -793,34 +802,38 @@ li {
 }
 
 
-.news__item:last-child{
+.news__item:last-child {
     border-bottom: solid 1px #ddd;
 }
 
 @media (min-width: 768px) {
     .news__item {
+        display: flex;
+        column-gap: 26px;
+        align-items: center;
+        justify-content: flex-start;
         width: 100%;
+        padding-bottom: 16px;
     }
 }
 
 .news__title {
-        margin-top: 9px;
+    margin-top: 9px;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.75;
+}
+
+@media (min-width: 768px) {
+    .news__title {
+        margin-top: 0;
+    }
 }
 
 .news__link {
     color: #168352;
 }
 
-@media (min-width: 768px) {
-    .news__title {
-            margin-top: 9px;
-        font-size: 15px;
-        font-weight: 700;
-    }
-}
 
 /* カテゴリ、日付 */
 .news__header {
@@ -851,25 +864,89 @@ li {
     color: #222
 }
 
+@media (min-width: 768px) {
+    .news__date {
+        font-size: 14px;
+    }
+}
+
 .news__button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(300/390*100vw);
     max-width: 300px;
-    height:66px;
-    margin: 25px auto;
+    height: 66px;
+    margin: 0 auto;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #168352;
+    background-color: #09947b;
     border-radius: 33px;
     box-shadow: 0 5px 0 #066655;
     transition: .3s;
 }
 
 .news__button:hover {
-   background-color:#09947b;
-  box-shadow: 0 2px 0 #333;
-  transform: translateY(3px);
+    box-shadow: 0 2px 0 #333;
+    transform: translateY(3px);
+}
+
+/* フッター
+------------------------------------- */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 68px;
+    background-color: #168352;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        height: 96px;
+    }
+}
+
+.footer__nav {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .footer__nav {
+        column-gap: 20px;
+    }
+}
+
+.footer__link {
+    font-size: 13px;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .footer__link {
+        font-size: 15px;
+    }
+
+    .footer__link:last-of-type {
+        letter-spacing: -0.07rem;
+
+    }
+}
+
+
+.footer__link-separater {
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .footer__link-separater {
+        height: 24px;
+    }
+}
 }
