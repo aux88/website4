@@ -498,9 +498,25 @@ li {
 
 .features__image {
     display: block;
-    width: min(390px, calc(390/1000*100vw));
     object-fit: cover;
-    object-position: 0 -9px;
+}
+
+.features__list-item:first-child .features__image{
+        object-position: 0 -30px;
+}
+
+.features__list-item:last-child .features__image{
+        object-position: 0 -16px;
+}
+
+@media(min-width: 768px) {
+    .features__image {
+        object-position: 0 -19px;
+    }
+
+    .features__list-item:last-child .features__image {
+        object-position: 0 -50px;
+    }
 }
 
 .features__text {
