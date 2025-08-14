@@ -513,6 +513,10 @@ li {
         object-position: 0 -19px;
     }
 
+    .features__list-item:first-child .features__image {
+        object-position: 0 -18px;
+    }
+
     .features__list-item:last-child .features__image {
         object-position: 0 -50px;
     }
@@ -1213,13 +1217,13 @@ li {
 ------------------------------------- */
 .gallaly {
     margin-top: 8px;
-    margin-bottom: 58px;
+    margin-bottom: 60px;
 }
 
 @media(min-width: 768px) {
     .gallaly {
         margin-top: 8px;
-        margin-bottom: 62px;
+        margin-bottom: 64px;
     }
 }
 
