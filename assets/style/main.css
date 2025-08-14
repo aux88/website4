@@ -1307,7 +1307,6 @@ li {
     }
 }
 
-
 /* アクティブなとき */
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #168352;
@@ -1701,7 +1700,7 @@ li {
 .faq__label {
     display: inline-block;
     min-width: 100px;
-    height: 24px;
+    height: 1.5rem;
     padding: 5px 11px 6px;
     margin-right: 4px;
     font-size: .6875rem;
@@ -1726,7 +1725,6 @@ li {
     }
 }
 
-/* 初期状態を表示するとき用のクラス */
 .faq__answer--active {
     display: block;
 }
