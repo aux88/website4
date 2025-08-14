@@ -13,9 +13,11 @@ $(window).on('resize', function () {
     menu.removeClass('hamburger__menu-active');
 });
 
-// 「トップ」のリンクをクリックしたらメニューを閉じる
-$('.hamburger__menu--back-to-top').on('click', function (event) {
-    menu.removeClass('hamburger__menu-active');
+// ハンバーガーメニューの現在のページのリンクをクリックした時はメニューを閉じる
+$('.hamburger__menu-link').on('click', function (e) {
+    if ($(this).attr('href') === '#') {
+        menu.removeClass('hamburger__menu-active');
+    }
 });
 
 // カルーセル
