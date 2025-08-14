@@ -19,16 +19,20 @@ $('.hamburger__menu--back-to-top').on('click', function (event) {
 });
 
 // カルーセル
-const swiper = new Swiper(".swiper", {
-    pagination: {
-        el: ".swiper-pagination", //必須の設定：ページネーションのclass指定
-        type: "bullets",
-        clickable: "clickable"
-    },
-    loop: true, //繰り返し指定
-    spaceBetween: 30, //スライド感の余白
-    autoplay: {
-        delay: 5000 //5秒ごとにスライダを切り替える
+$(document).ready(function () {
+    if ($('.swiper').length > 0) {
+        const swiper = new Swiper(".swiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+                clickable: true
+            },
+            loop: true,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 5000
+            }
+        });
     }
 });
 
