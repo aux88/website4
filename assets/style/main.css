@@ -1453,12 +1453,14 @@ li {
 
 .retail-price__price {
     font-size: 2rem;
+    color: #168352;
     letter-spacing: .0063rem;
 }
 
 .retail-price__price--tax-include {
     font-size: 1rem;
     font-weight: 700;
+    color: #168352;
 }
 
 /* スペック
