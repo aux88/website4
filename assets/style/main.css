@@ -1261,6 +1261,12 @@ li {
     object-position: calc(-49/390*100vw) calc(-269/390*100vw);
 }
 
+.gallaly__image4 {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
 @media(min-width: 768px) {
     .gallaly__image1 {
         width: calc(1000/832*100vw);
