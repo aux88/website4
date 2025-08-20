@@ -1,0 +1,5 @@
+ls:
+  assets/image:
+    .jpg: snake_case
+    .png: snake_case
+    .svg: snake_case
